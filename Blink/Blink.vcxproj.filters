@@ -15,14 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\..\..\..\..\..\SDL2-2.0.4\lib\x86\SDL2.lib" />
-    <Library Include="..\..\..\..\..\..\..\..\SDL2-2.0.4\lib\x86\SDL2main.lib" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="Graphics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -33,5 +35,12 @@
     <ClInclude Include="Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\..\..\..\SDL\lib\win32\SDL2.lib" />
+    <Library Include="..\..\..\..\..\..\..\..\SDL\lib\win32\SDL2main.lib" />
   </ItemGroup>
 </Project>

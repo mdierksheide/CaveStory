@@ -1,4 +1,5 @@
-#pragma once
+#ifndef GAME_H
+#define GAME_H
 
 class Graphics;
 
@@ -8,7 +9,9 @@ public:
 	Game();
 	~Game();
 private:
-	void gameLoop();
-	void draw(Graphics* graphics);
-	void update(float dt);
+	void GameLoop();
+	void Draw(Graphics& graphics);
+	void Update(float dt);
 };
+
+#endif

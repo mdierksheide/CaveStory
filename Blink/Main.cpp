@@ -2,17 +2,12 @@
  * The entry point of the game 
  */
 
-#include <SDL.h>
-#include "Graphics.h"
+#include "SDL.h"
+
+#include "Game.h"
 
 int main(int argc, char* argv[])
 {
-	Graphics gfx;
-
-	while (true)
-	{
-
-	}
-
+	Game game;
 	return 0;
 }
