@@ -52,13 +52,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\..\..\..\..\..\SDL\lib\win32\SDL2.lib" />
-    <Library Include="..\..\..\..\..\..\..\..\SDL\lib\win32\SDL2main.lib" />
-    <Library Include="..\..\..\..\..\..\..\..\SDL_Image\lib\x86\SDL2_image.lib" />
+    <Library Include="SDL2.lib" />
+    <Library Include="SDL2main.lib" />
+    <Library Include="SDL2_image.lib" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\CaveStory\data\MyChar.png">
-      <Filter>Resources\Sprites</Filter>
+    <Image Include="MyChar.png">
+      <Filter>Resources</Filter>
     </Image>
   </ItemGroup>
 </Project>
