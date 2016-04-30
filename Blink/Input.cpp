@@ -1,7 +1,3 @@
-/* Input.cpp
- * Keeps track of all input to the game.
- */
-
 #include "Input.h"
 
 void Input::BeginNewFrame()
