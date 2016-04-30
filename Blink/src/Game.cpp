@@ -27,7 +27,7 @@ void Game::GameLoop()
 	Graphics gfx;
 	Input input;
 	SDL_Event event;
-	_player = Sprite(gfx, "MyChar.png", 0, 0,
+	_player = Sprite(gfx, "res\\MyChar.png", 0, 0,
 		16, 16, 100, 100);
 	int LAST_UPDATE_TIME = SDL_GetTicks();
 
