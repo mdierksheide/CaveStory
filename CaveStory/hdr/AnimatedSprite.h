@@ -59,7 +59,7 @@ class AnimatedSprite : public Sprite
 		std::map<std::string, std::vector<SDL_Rect>> _animations;
 		std::map<std::string, Vector2> _offsets;
 
-		int _iFrame;
+		unsigned int _iFrame;
 		double _timeElapsed;
 		bool _visible;
 };

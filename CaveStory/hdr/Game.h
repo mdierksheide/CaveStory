@@ -16,7 +16,7 @@ class Game
 	private:
 		void GameLoop();
 		void Draw(Graphics& graphics);
-		void Update(int dt);
+		void Update(float dt);
 
 		Player _player;
 };

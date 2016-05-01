@@ -74,7 +74,7 @@ void Game::GameLoop()
 		const int CURRENT_TIME_MS = SDL_GetTicks();
 		int dt = CURRENT_TIME_MS - LAST_UPDATE_TIME;
 
-		Update(std::min(dt, MAX_FRAME_TIME));
+		Update((float)std::min(dt, MAX_FRAME_TIME));
 
 		LAST_UPDATE_TIME = CURRENT_TIME_MS;
 
@@ -91,7 +91,7 @@ void Game::Draw(Graphics& gfx)
 	gfx.Flip();
 }
 
-void Game::Update(int dt)
+void Game::Update(float dt)
 {
 	_player.Update(dt);
 }
