@@ -42,6 +42,9 @@
     <ClCompile Include="src\Level.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="src\tinyxml2.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Game.h">
@@ -83,6 +86,9 @@
     <ClInclude Include="hdr\Level.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="hdr\tinyxml2.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="libs\SDL2.lib" />
@@ -96,5 +102,11 @@
     <Image Include="res\backgrounds\bkBlue.png">
       <Filter>Resources</Filter>
     </Image>
+    <Image Include="res\tilesets\PrtCave.png">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\maps\map1.tmx" />
   </ItemGroup>
 </Project>

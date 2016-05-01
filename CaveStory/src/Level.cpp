@@ -35,15 +35,16 @@ void Level::Draw(Graphics &gfx)
 {
 	SDL_Rect srcRect = { 0, 0, 64, 64 };
 	SDL_Rect destRect;
-	destRect.w = 64;
-	destRect.h = 64;
+	destRect.w = 64 * Globals::SPRITE_SCALE;
+	destRect.h = 64 * Globals::SPRITE_SCALE;
 
+	// Draw the background
 	for (int x = 0; x < _size.x / 64; x++)
 	{
 		for (int y = 0; y < _size.y / 64; y++)
 		{
-			destRect.x = x * 64;
-			destRect.y = y * 64;
+			destRect.x = x * 64 * Globals::SPRITE_SCALE;
+			destRect.y = y * 64 * Globals::SPRITE_SCALE;
 			gfx.BlitSurface(_bgTexture, &srcRect, &destRect);
 		}
 	}
