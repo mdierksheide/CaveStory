@@ -159,6 +159,7 @@
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\Sprite.cpp" />
+    <ClCompile Include="src\Tile.cpp" />
     <ClCompile Include="src\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +171,7 @@
     <ClInclude Include="hdr\Level.h" />
     <ClInclude Include="hdr\Player.h" />
     <ClInclude Include="hdr\Sprite.h" />
+    <ClInclude Include="hdr\Tile.h" />
     <ClInclude Include="hdr\tinyxml2.h" />
     <ClInclude Include="Headers\Game.h" />
     <ClInclude Include="Headers\Globals.h" />

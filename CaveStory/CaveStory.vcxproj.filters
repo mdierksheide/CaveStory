@@ -45,6 +45,9 @@
     <ClCompile Include="src\tinyxml2.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="src\Tile.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Game.h">
@@ -87,6 +90,9 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="hdr\tinyxml2.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hdr\Tile.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>

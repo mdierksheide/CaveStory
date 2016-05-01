@@ -327,7 +327,7 @@
    <tile gid="49"/>
   </data>
  </layer>
- <layer name="Tile Layer 1" width="20" height="16">
+ <layer name="Foreground" width="20" height="16">
   <data>
    <tile gid="0"/>
    <tile gid="0"/>
