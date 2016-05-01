@@ -27,13 +27,10 @@ class AnimatedSprite : public Sprite
 		void PlayAnimation(std::string animation, bool once = false);
 
 		// Updates the animated sprite
-		void Update(int dt);
+		void Update(float dt);
 
 		// Draws the sprite to the screen
 		void Draw(Graphics &graphics, int x, int y);
-
-		// Sets up all animations for a sprite
-		virtual void SetupAnimation();
 
 	protected:
 		double _timeToUpdate;
@@ -52,7 +49,11 @@ class AnimatedSprite : public Sprite
 
 		void SetVisibility(bool visible);
 
-		virtual void AnimationDone(std::string currentAnimation);
+		// Sets up all animations for a sprite
+		virtual void SetupAnimation() = 0;
+
+		// Logic that triggers when the given animation finishes
+		virtual void AnimationDone(std::string currentAnimation) = 0;
 
 	private:
 		std::map<std::string, std::vector<SDL_Rect>> _animations;

@@ -27,10 +27,7 @@ void Game::GameLoop()
 	Graphics gfx;
 	Input input;
 	SDL_Event event;
-	_player = AnimatedSprite(gfx, "res\\MyChar.png", 0, 0, 16, 16, 100,
-		100, 100);
-	_player.SetupAnimation();
-	_player.PlayAnimation("RunRight");
+	_player = Player(gfx, 100, 100);
 
 	int LAST_UPDATE_TIME = SDL_GetTicks();
 
@@ -60,6 +57,19 @@ void Game::GameLoop()
 		{
 			return;
 		}
+		else if (input.IsKeyHeld(SDL_SCANCODE_LEFT))
+		{
+			_player.MoveLeft();
+		}
+		else if (input.IsKeyHeld(SDL_SCANCODE_RIGHT))
+		{
+			_player.MoveRight();
+		}
+		else if (!input.IsKeyHeld(SDL_SCANCODE_LEFT) &&
+				 !input.IsKeyHeld(SDL_SCANCODE_RIGHT))
+		{
+			_player.StopMoving();
+		}
 
 		const int CURRENT_TIME_MS = SDL_GetTicks();
 		int dt = CURRENT_TIME_MS - LAST_UPDATE_TIME;
@@ -76,7 +86,7 @@ void Game::Draw(Graphics& gfx)
 {
 	gfx.Clear();
 
-	_player.Draw(gfx, 100, 100);
+	_player.Draw(gfx);
 
 	gfx.Flip();
 }

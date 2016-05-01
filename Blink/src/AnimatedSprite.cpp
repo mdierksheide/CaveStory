@@ -59,7 +59,7 @@ void AnimatedSprite::StopAnimation()
 	AnimationDone(_currentAnimation);
 }
 
-void AnimatedSprite::Update(int dt)
+void AnimatedSprite::Update(float dt)
 {
 	Sprite::Update();
 
@@ -97,15 +97,4 @@ void AnimatedSprite::Draw(Graphics &gfx, int x, int y)
 		SDL_Rect srcRect = _animations[_currentAnimation][_iFrame];
 		gfx.BlitSurface(_spriteSheet, &srcRect, &destRect);
 	}
-}
-
-void AnimatedSprite::AnimationDone(std::string currentAnimation)
-{
-
-}
-
-void AnimatedSprite::SetupAnimation()
-{
-	AddAnimation(3, 0, 0, "RunLeft", 16, 16, Vector2(0, 0));
-	AddAnimation(3, 0, 16, "RunRight", 16, 16, Vector2(0, 0));
 }

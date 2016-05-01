@@ -6,7 +6,7 @@
 #define GAME_H
 
 #include "Graphics.h"
-#include "AnimatedSprite.h"
+#include "Player.h"
 
 class Game
 {
@@ -18,7 +18,7 @@ class Game
 		void Draw(Graphics& graphics);
 		void Update(int dt);
 
-		AnimatedSprite _player;
+		Player _player;
 };
 
 #endif

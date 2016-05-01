@@ -155,6 +155,7 @@
     <ClCompile Include="src\Graphics.cpp" />
     <ClCompile Include="src\Input.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +164,7 @@
     <ClInclude Include="hdr\Globals.h" />
     <ClInclude Include="hdr\Graphics.h" />
     <ClInclude Include="hdr\Input.h" />
+    <ClInclude Include="hdr\Player.h" />
     <ClInclude Include="hdr\Sprite.h" />
     <ClInclude Include="Headers\Game.h" />
     <ClInclude Include="Headers\Globals.h" />
