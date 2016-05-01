@@ -6,6 +6,7 @@
 #define GAME_H
 
 #include "Graphics.h"
+#include "Level.h"
 #include "Player.h"
 
 class Game
@@ -19,6 +20,7 @@ class Game
 		void Update(float dt);
 
 		Player _player;
+		Level _level;
 };
 
 #endif

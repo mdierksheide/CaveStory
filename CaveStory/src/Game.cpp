@@ -28,6 +28,7 @@ void Game::GameLoop()
 	Input input;
 	SDL_Event event;
 	_player = Player(gfx, 100, 100);
+	_level = Level("map1", Vector2(100, 100), gfx);
 
 	int LAST_UPDATE_TIME = SDL_GetTicks();
 
@@ -86,6 +87,7 @@ void Game::Draw(Graphics& gfx)
 {
 	gfx.Clear();
 
+	_level.Draw(gfx);
 	_player.Draw(gfx);
 
 	gfx.Flip();
@@ -94,4 +96,5 @@ void Game::Draw(Graphics& gfx)
 void Game::Update(float dt)
 {
 	_player.Update(dt);
+	_level.Update(dt);
 }

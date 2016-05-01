@@ -39,6 +39,9 @@
     <ClCompile Include="src\Player.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="src\Level.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Game.h">
@@ -77,6 +80,9 @@
     <ClInclude Include="hdr\Player.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="hdr\Level.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="libs\SDL2.lib" />
@@ -84,7 +90,10 @@
     <Library Include="libs\SDL2main.lib" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\MyChar.png">
+    <Image Include="res\sprites\MyChar.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\backgrounds\bkBlue.png">
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>

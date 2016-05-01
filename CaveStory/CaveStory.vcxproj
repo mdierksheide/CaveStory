@@ -155,6 +155,7 @@
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\Graphics.cpp" />
     <ClCompile Include="src\Input.cpp" />
+    <ClCompile Include="src\Level.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Player.cpp" />
     <ClCompile Include="src\Sprite.cpp" />
@@ -165,6 +166,7 @@
     <ClInclude Include="hdr\Globals.h" />
     <ClInclude Include="hdr\Graphics.h" />
     <ClInclude Include="hdr\Input.h" />
+    <ClInclude Include="hdr\Level.h" />
     <ClInclude Include="hdr\Player.h" />
     <ClInclude Include="hdr\Sprite.h" />
     <ClInclude Include="Headers\Game.h" />
@@ -179,7 +181,8 @@
     <Library Include="libs\SDL2_image.lib" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\MyChar.png" />
+    <Image Include="res\backgrounds\bkBlue.png" />
+    <Image Include="res\sprites\MyChar.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -9,9 +9,9 @@ namespace player_constants
 Player::Player() {}
 
 Player::Player(Graphics &gfx, float x, float y) :
-	AnimatedSprite(gfx, "res\\MyChar.png", 0, 0, 16, 16, x, y, 100)
+	AnimatedSprite(gfx, "res\\sprites\\MyChar.png", 0, 0, 16, 16, x, y, 100)
 {
-	gfx.LoadImage("res\\MyChar.png");
+	gfx.LoadImage("res\\sprites\\MyChar.png");
 
 	SetupAnimation();
 	PlayAnimation("RunRight");
