@@ -27,8 +27,11 @@ void Game::GameLoop()
 	Graphics gfx;
 	Input input;
 	SDL_Event event;
-	_player = Sprite(gfx, "res\\MyChar.png", 0, 0,
-		16, 16, 100, 100);
+	_player = AnimatedSprite(gfx, "res\\MyChar.png", 0, 0, 16, 16, 100,
+		100, 100);
+	_player.SetupAnimation();
+	_player.PlayAnimation("RunRight");
+
 	int LAST_UPDATE_TIME = SDL_GetTicks();
 
 	while (true)
@@ -78,7 +81,7 @@ void Game::Draw(Graphics& gfx)
 	gfx.Flip();
 }
 
-void Game::Update(float dt)
+void Game::Update(int dt)
 {
-
+	_player.Update(dt);
 }

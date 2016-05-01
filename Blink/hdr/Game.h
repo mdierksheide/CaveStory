@@ -5,8 +5,8 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include "Sprite.h"
 #include "Graphics.h"
+#include "AnimatedSprite.h"
 
 class Game
 {
@@ -16,9 +16,9 @@ class Game
 	private:
 		void GameLoop();
 		void Draw(Graphics& graphics);
-		void Update(float dt);
+		void Update(int dt);
 
-		Sprite _player;
+		AnimatedSprite _player;
 };
 
 #endif

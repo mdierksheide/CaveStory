@@ -8,6 +8,8 @@
 #include <map>
 #include <string>
 
+#include <SDL.h>
+
 #define WIN_WIDTH 640
 #define WIN_HEIGHT 480
 
@@ -35,6 +37,7 @@ class Graphics
 
 		// Returns the _renderer.
 		SDL_Renderer* GetRenderer() const;
+
 	private:
 		SDL_Window* _window;
 		SDL_Renderer* _renderer;
