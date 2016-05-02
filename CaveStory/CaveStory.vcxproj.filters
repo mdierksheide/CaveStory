@@ -95,6 +95,9 @@
     <ClInclude Include="hdr\Tile.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="hdr\Rectangle.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="libs\SDL2.lib" />
@@ -114,5 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="res\maps\map1.tmx" />
+    <None Include="res\maps\map2.tmx" />
   </ItemGroup>
 </Project>

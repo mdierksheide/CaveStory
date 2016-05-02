@@ -27,8 +27,8 @@ void Game::GameLoop()
 	Graphics gfx;
 	Input input;
 	SDL_Event event;
-	_player = Player(gfx, 100, 100);
 	_level = Level("map1", Vector2(100, 100), gfx);
+	_player = Player(gfx, _level.GetPlayerSpawnPoint());
 
 	int LAST_UPDATE_TIME = SDL_GetTicks();
 
@@ -96,5 +96,14 @@ void Game::Draw(Graphics& gfx)
 void Game::Update(float dt)
 {
 	_player.Update(dt);
-	_level.Update(dt);
+	_level.Update((int)dt);
+
+	// Check collisions
+	std::vector<Rectangle> others =
+		_level.CheckTileCollisions(_player.GetBoundingBox());
+
+	if (others.size() > 0)
+	{
+		_player.HandleTileCollisions(others);
+	}
 }

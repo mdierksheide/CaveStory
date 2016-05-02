@@ -170,6 +170,7 @@
     <ClInclude Include="hdr\Input.h" />
     <ClInclude Include="hdr\Level.h" />
     <ClInclude Include="hdr\Player.h" />
+    <ClInclude Include="hdr\Rectangle.h" />
     <ClInclude Include="hdr\Sprite.h" />
     <ClInclude Include="hdr\Tile.h" />
     <ClInclude Include="hdr\tinyxml2.h" />
@@ -190,9 +191,8 @@
     <Image Include="res\tilesets\PrtCave.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\maps\map1.tmx">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="res\maps\map1.tmx" />
+    <None Include="res\maps\map2.tmx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

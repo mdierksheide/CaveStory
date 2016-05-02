@@ -5,6 +5,7 @@
 #include <vector>
 
 #include "Globals.h"
+#include "Rectangle.h"
 #include "Tile.h"
 
 class Graphics;
@@ -22,6 +23,10 @@ class Level
 		void Update(int dt);
 		void Draw(Graphics &gfx);
 
+		std::vector<Rectangle> CheckTileCollisions(const Rectangle &other);
+
+		const Vector2 GetPlayerSpawnPoint() const;
+
 	private:
 		std::string _mapName;
 		Vector2 _spawnPoint;
@@ -30,7 +35,9 @@ class Level
 		SDL_Texture* _bgTexture;
 		std::vector<Tile> _tileList;
 		std::vector<Tileset> _tilesets;
+		std::vector<Rectangle> _collisionRects;
 
+		// Parses the XML file for this level
 		void LoadMap(std::string map, Graphics &gfx);
 
 };
